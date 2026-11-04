@@ -304,3 +304,10 @@ a.card:hover { text-decoration: none; background: var(--surface-hover); border-c
 .faq-item summary::after { content: "+"; position: absolute; right: 0; top: 14px; font-size: 1.4rem; color: var(--accent); transition: transform .2s; }
 .faq-item[open] summary::after { transform: rotate(45deg); }
 .faq-item p { color: var(--muted-strong); margin: 0 0 18px; font-size: .97rem; }
+
+/* ---------- booking calendar ---------- */
+.booking { margin-top: 32px; padding: 0; overflow: hidden; background: #fff; border-color: rgba(255,255,255,.15); }
+.booking iframe { display: block; width: 100%; height: 720px; border: 0; }
+@media (max-width: 700px) { .booking iframe { height: 900px; } }
+.card a[href^="mailto:"], .site-footer a[href^="mailto:"] { overflow-wrap: anywhere; }
+.hero-grid > * { min-width: 0; }
